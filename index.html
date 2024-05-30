@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- تعريف نوع المستند ولغة الصفحة -->
+    <meta charset="UTF-8">
+    <!-- تعيين ترميز الحروف للصفحة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- تعريف عرض الصفحة لضمان تجاوبها مع جميع الأجهزة -->
+    <title>Quiz App</title>
+    <!-- عنوان الصفحة الذي يظهر في شريط العنوان للمتصفح -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- ربط ملف CSS الخارجي لتنسيق الصفحة -->
+</head>
+<body>
+    <!-- بداية جسم الصفحة -->
+    <div id="quiz-container" >
+        <!-- قسم لتغليف محتوى الاختبار -->
+        <div id="quiz"></div>
+        <!-- عنصر لعرض الأسئلة وخيارات الإجابة -->
+        <button id="next-btn" style="display: none;">Next Question</button>
+        <!-- زر للانتقال للسؤال التالي، مخفي افتراضيًا -->
+        <button id="start-quiz-btn" style="display: none;">Start Quiz</button>
+        <!-- زر لبدء الاختبار، مخفي افتراضيًا -->
+        <form id="add-question-form" >
+            <!-- نموذج لإضافة أسئلة جديدة -->
+            <input type="text" id="new-question" placeholder="Enter your question" required>
+            <!-- حقل إدخال للسؤال الجديد -->
+            <br>
+            <input type="text" id="new-answer-a" placeholder="Answer A" required>
+            <!-- حقل إدخال للإجابة A -->
+            <br>
+            <input type="text" id="new-answer-b" placeholder="Answer B" required>
+            <!-- حقل إدخال للإجابة B -->
+            <br>
+            <input type="text" id="new-answer-c" placeholder="Answer C" required>
+            <!-- حقل إدخال للإجابة C -->
+            <br>
+            <input type="text" id="new-answer-d" placeholder="Answer D" required>
+            <!-- حقل إدخال للإجابة D -->
+            <br>
+            <input type="text" id="new-correct-answer" placeholder="Correct answer (a, b, c, or d)" required>
+            <!-- حقل إدخال للإجابة الصحيحة -->
+            <br>
+            <button type="submit">Add Question</button>
+            <!-- زر لإضافة السؤال الجديد -->
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <!-- ربط ملف JavaScript الخارجي لتشغيل وظائف الصفحة -->
+</body>
+</html>
